@@ -5,15 +5,18 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Products = () => {
   const [Products, setProducts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(9);
   const [count, setCount] = useState(0);
   useEffect(() => {
-    fetch("http://localhost:5000/products").then((res) =>
+    fetch(
+      `http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}`
+    ).then((res) =>
       res.json().then((data) => {
         setProducts(data);
       })
     );
-  }, []);
+  }, [currentPage, itemsPerPage]);
   useEffect(() => {
     fetch("http://localhost:5000/products-count").then((res) =>
       res.json().then((data) => {
@@ -23,6 +26,10 @@ const Products = () => {
   }, []);
   const numOfPage = Math.ceil(count / itemsPerPage);
   const pages = [...Array(numOfPage).keys()].map((element) => element + 1);
+  const handlePagination = (page) => {
+    setCurrentPage(page);
+  };
+  console.log(currentPage);
   return (
     <div className="w-10/12 mx-auto mt-40 mb-20">
       <h1 className="text-center font-pt text-5xl font-bold">
@@ -41,12 +48,13 @@ const Products = () => {
             <span className="mx-1">previous</span>
           </div>
         </a>
-        {pages.map((page, idx) => (
+        {pages.map((item, idx) => (
           <button
+            onClick={() => handlePagination(item)}
             key={idx}
-            className="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-gray-200 hover:bg-gray-300 rounded-md sm:inline   "
+            className={`hidden ${currentPage === item ? 'bg-yellow-300':'bg-gray-200'} px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform   rounded-md sm:inline`}
           >
-            {page}
+            {item}
           </button>
         ))}
 
