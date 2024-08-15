@@ -1,0 +1,402 @@
+[
+  {
+    "productName": "Men's Casual T-Shirt",
+    "productImage": "https://i.ibb.co/T1346dY/p-1-removebg-preview.png",
+    "description": "100% cotton short-sleeve t-shirt available in various colors.",
+    "price": 19.99,
+    "category": "Men",
+    "brand": "UrbanWear",
+    "ratings": 4.5,
+    "createdAt": "2024-08-01T10:00:00Z"
+  },
+  {
+    "productName": "Women's Summer Dress",
+    "productImage": "https://i.ibb.co/Xxc63QK/p1-product-i1.png",
+    "description": "Lightweight floral dress with a comfortable fit for summer.",
+    "price": 34.99,
+    "category": "Women",
+    "brand": "FashionHub",
+    "ratings": 4.7,
+    "createdAt": "2024-08-02T11:00:00Z"
+  },
+  {
+    "productName": "Men's Denim Jacket",
+    "productImage": "https://i.ibb.co/RcY4WFH/product-24.png",
+    "description": "Classic denim jacket with a modern slim fit design.",
+    "price": 49.99,
+    "category": "Men",
+    "brand": "StyleCo",
+    "ratings": 4.6,
+    "createdAt": "2024-08-03T09:30:00Z"
+  },
+  {
+    "productName": "Unisex Hoodie",
+    "productImage": "https://i.ibb.co/wBWc0gz/product-23.png",
+    "description": "Comfortable hoodie with a soft fleece interior and adjustable hood.",
+    "price": 39.99,
+    "category": "Kid",
+    "brand": "ComfyCloth",
+    "ratings": 4.4,
+    "createdAt": "2024-08-05T12:20:00Z"
+  },
+  {
+    "productName": "Men's Chino Pants",
+    "productImage": "https://i.ibb.co/5F55bsG/p-3.jpg",
+    "description": "Slim-fit chino pants with a wrinkle-resistant finish.",
+    "price": 44.99,
+    "category": "Men",
+    "brand": "ModernFit",
+    "ratings": 4.3,
+    "createdAt": "2024-08-06T15:00:00Z"
+  },
+  {
+    "productName": "Women's Blazer",
+    "productImage": "https://i.ibb.co/Rc3tCpj/p-4.jpg",
+    "description": "Tailored blazer with a sleek design for a professional look.",
+    "price": 69.99,
+    "category": "Women",
+    "brand": "Elegance",
+    "ratings": 4.9,
+    "createdAt": "2024-08-07T08:15:00Z"
+  },
+  {
+    "productName": "Men's Running Shoes",
+    "productImage": "https://i.ibb.co/SwR52sr/p-5.jpg",
+    "description": "Lightweight and breathable running shoes with cushioned soles.",
+    "price": 59.99,
+    "category": "Men",
+    "brand": "RunFast",
+    "ratings": 4.7,
+    "createdAt": "2024-08-08T10:45:00Z"
+  },
+  {
+    "productName": "Women's Knit Sweater",
+    "productImage": "https://i.ibb.co/QMtpJrK/p-6.jpg",
+    "description": "Cozy knit sweater with a relaxed fit and ribbed cuffs.",
+    "price": 49.99,
+    "category": "Women",
+    "brand": "WarmWool",
+    "ratings": 4.5,
+    "createdAt": "2024-08-09T09:00:00Z"
+  },
+  {
+    "productName": "Men's Leather Belt",
+    "productImage": "https://i.ibb.co/F49Wwgs/p-7.jpg",
+    "description": "Genuine leather belt with a classic buckle design.",
+    "price": 24.99,
+    "category": "Men",
+    "brand": "ClassicLeather",
+    "ratings": 4.8,
+    "createdAt": "2024-08-10T11:30:00Z"
+  },
+  {
+    "productName": "Women's Ankle Boots",
+    "productImage": "https://i.ibb.co/ZNzHhRR/p-8.jpg",
+    "description": "Stylish ankle boots with a side zipper and cushioned insole.",
+    "price": 79.99,
+    "category": "Women",
+    "brand": "StepInStyle",
+    "ratings": 4.6,
+    "createdAt": "2024-08-11T14:15:00Z"
+  },
+  {
+    "productName": "Men's Polo Shirt",
+    "productImage": "https://i.ibb.co/LYr3zqF/p-9-removebg-preview.png",
+    "description": "Breathable polo shirt with a collar and button placket.",
+    "price": 29.99,
+    "category": "Men",
+    "brand": "CasualFit",
+    "ratings": 4.4,
+    "createdAt": "2024-08-12T16:45:00Z"
+  },
+  {
+    "productName": "Women's Maxi Skirt",
+    "productImage": "https://i.ibb.co/bFrdfHw/product-9.png",
+    "description": "Flowy maxi skirt with an elastic waistband and floral print.",
+    "price": 39.99,
+    "category": "Women",
+    "brand": "BohoStyle",
+    "ratings": 4.7,
+    "createdAt": "2024-08-13T13:00:00Z"
+  },
+  {
+    "productName": "Men's Casual Sneakers",
+    "productImage": "https://i.ibb.co/SwR52sr/p-5.jpg",
+    "description": "Comfortable sneakers with a durable rubber sole.",
+    "price": 54.99,
+    "category": "Men",
+    "brand": "WalkEasy",
+    "ratings": 4.5,
+    "createdAt": "2024-08-14T17:30:00Z"
+  },
+  {
+    "productName": "Women's Wool Scarf",
+    "productImage": "https://i.ibb.co/2Fs1SGq/product-6.png",
+    "description": "Soft wool scarf with fringe edges, perfect for cold weather.",
+    "price": 29.99,
+    "category": "Women",
+    "brand": "CozyWool",
+    "ratings": 4.9,
+    "createdAt": "2024-08-15T09:20:00Z"
+  },
+  {
+    "productName": "Men's Formal Suit",
+    "productImage": "https://i.ibb.co/H4pyvjM/p-10.jpg",
+    "description": "Two-piece formal suit with a slim fit and classic design.",
+    "price": 199.99,
+    "category": "Men",
+    "brand": "Elegance",
+    "ratings": 4.8,
+    "createdAt": "2024-08-16T10:40:00Z"
+  },
+  {
+    "productName": "Women's High Heels",
+    "productImage": "https://i.ibb.co/sKwV9ht/p-11.jpg",
+    "description": "Elegant high heels with a pointed toe and stiletto heel.",
+    "price": 89.99,
+    "category": "Women",
+    "brand": "GlamStep",
+    "ratings": 4.7,
+    "createdAt": "2024-08-17T12:30:00Z"
+  },
+  {
+    "productName": "Men's Wool Sweater",
+    "productImage": "https://i.ibb.co/ckfqpYb/product-20.png",
+    "description": "Warm wool sweater with a crew neck and ribbed hem.",
+    "price": 69.99,
+    "category": "Men",
+    "brand": "WinterWarm",
+    "ratings": 4.6,
+    "createdAt": "2024-08-18T14:50:00Z"
+  },
+  {
+    "productName": "Women's Denim Jeans",
+    "productImage": "https://i.ibb.co/v4gktGs/product-8.png",
+    "description": "Skinny fit denim jeans with a comfortable stretch fabric.",
+    "price": 49.99,
+    "category": "Women",
+    "brand": "DenimCo",
+    "ratings": 4.8,
+    "createdAt": "2024-08-19T09:10:00Z"
+  },
+  {
+    "productName": "Men's Leather Jacket",
+    "productImage": "https://i.ibb.co/RcY4WFH/product-24.png",
+    "description": "Genuine leather jacket with a zip closure and multiple pockets.",
+    "price": 159.99,
+    "category": "Men",
+    "brand": "LeatherWorks",
+    "ratings": 4.9,
+    "createdAt": "2024-08-20T15:30:00Z"
+  },
+  {
+    "productName": "Women's Trench Coat",
+    "productImage": "https://i.ibb.co/g7159T8/p-12.jpg",
+    "description": "Classic trench coat with a belted waist and double-breasted design.",
+    "price": 119.99,
+    "category": "Women",
+    "brand": "StyleChic",
+    "ratings": 4.8,
+    "createdAt": "2024-08-21T11:45:00Z"
+  },
+  {
+    "productName": "Men's Formal Shoes",
+    "productImage": "https://i.ibb.co/0jZpXBg/p-13.jpg",
+    "description": "Elegant leather formal shoes with a polished finish.",
+    "price": 89.99,
+    "category": "Men",
+    "brand": "FootClassic",
+    "ratings": 4.7,
+    "createdAt": "2024-08-22T10:20:00Z"
+  },
+  {
+    "productName": "Women's Handbag",
+    "productImage": "https://i.ibb.co/d6wmBqb/p-14.jpg",
+    "description": "Stylish leather handbag with multiple compartments and a zip closure.",
+    "price": 79.99,
+    "category": "Women",
+    "brand": "FashionCarry",
+    "ratings": 4.9,
+    "createdAt": "2024-08-23T13:10:00Z"
+  },
+  {
+    "productName": "Men's Casual Shorts",
+    "productImage": "https://i.ibb.co/30wdC33/p-15.jpg",
+    "description": "Comfortable cotton shorts with an elastic waistband.",
+    "price": 29.99,
+    "category": "Men",
+    "brand": "EasyWear",
+    "ratings": 4.4,
+    "createdAt": "2024-08-24T09:30:00Z"
+  },
+  {
+    "productName": "Kid's Cotton T-Shirt",
+    "productImage": "https://i.ibb.co/5RgDyBf/product-33.png",
+    "description": "Soft and breathable cotton t-shirt available in fun prints.",
+    "price": 14.99,
+    "category": "Kid",
+    "brand": "PlayWear",
+    "ratings": 4.7,
+    "createdAt": "2024-08-25T11:50:00Z"
+  },
+  {
+    "productName": "Kid's Denim Shorts",
+    "productImage": "https://i.ibb.co/VJ4z6hH/product-32.png",
+    "description": "Durable denim shorts with an adjustable waistband.",
+    "price": 19.99,
+    "category": "Kid",
+    "brand": "KidStyle",
+    "ratings": 4.5,
+    "createdAt": "2024-08-26T13:20:00Z"
+  },
+  {
+    "productName": "Kid's Sneakers",
+    "productImage": "https://i.ibb.co/TtzM88S/p-16.jpg",
+    "description": "Lightweight sneakers with velcro straps for easy wear.",
+    "price": 29.99,
+    "category": "Kid",
+    "brand": "TinySteps",
+    "ratings": 4.8,
+    "createdAt": "2024-08-27T15:00:00Z"
+  },
+  {
+    "productName": "Kid's Hoodie",
+    "productImage": "https://i.ibb.co/9pJn9NZ/product-27.png",
+    "description": "Cozy hoodie with a fun graphic print and front pocket.",
+    "price": 24.99,
+    "category": "Kid",
+    "brand": "LittleComfy",
+    "ratings": 4.6,
+    "createdAt": "2024-08-28T10:45:00Z"
+  },
+  {
+    "productName": "Kid's Winter Coat",
+    "productImage": "https://i.ibb.co/W0DZ0wq/product-31.png",
+    "description": "Warm winter coat with a hood and insulated lining.",
+    "price": 49.99,
+    "category": "Kid",
+    "brand": "WinterGuard",
+    "ratings": 4.9,
+    "createdAt": "2024-08-29T12:30:00Z"
+  },
+  {
+    "productName": "Kid's Pajama Set",
+    "productImage": "https://i.ibb.co/CQCgwHD/product-28.png",
+    "description": "Comfortable cotton pajama set with cute animal prints.",
+    "price": 19.99,
+    "category": "Kid",
+    "brand": "DreamyNights",
+    "ratings": 4.8,
+    "createdAt": "2024-08-30T14:15:00Z"
+  },
+  {
+    "productName": "Kid's Rain Boots",
+    "productImage": "https://i.ibb.co/HHJjH1L/p-17.jpg",
+    "description": "Waterproof rain boots with a non-slip sole and playful designs.",
+    "price": 24.99,
+    "category": "Kid",
+    "brand": "SplashWalk",
+    "ratings": 4.7,
+    "createdAt": "2024-08-31T16:00:00Z"
+  },
+  {
+    "productName": "Kid's Backpack",
+    "productImage": "https://i.ibb.co/61wjQCy/back.webp",
+    "description": "Spacious backpack with adjustable straps and fun characters.",
+    "price": 29.99,
+    "category": "Kid",
+    "brand": "AdventureGear",
+    "ratings": 4.9,
+    "createdAt": "2024-09-01T09:30:00Z"
+  },
+  {
+    "productName": "Men's Sports Watch",
+    "productImage": "https://i.ibb.co/1vJtRc8/p-18.jpg",
+    "description": "Water-resistant sports watch with multiple functions.",
+    "price": 99.99,
+    "category": "Men",
+    "brand": "TimeMaster",
+    "ratings": 4.8,
+    "createdAt": "2024-09-02T08:15:00Z"
+  },
+  {
+    "productName": "Women's Leather Gloves",
+    "productImage": "https://i.ibb.co/RPt81HB/p-20.jpg",
+    "description": "Soft leather gloves with a fleece lining for extra warmth.",
+    "price": 39.99,
+    "category": "Women",
+    "brand": "WinterWear",
+    "ratings": 4.7,
+    "createdAt": "2024-09-03T10:25:00Z"
+  },
+  {
+    "productName": "Kid's Sun Hat",
+    "productImage": "https://i.ibb.co/sbSLBfv/p-21.jpg",
+    "description": "Wide-brimmed sun hat with UV protection for outdoor play.",
+    "price": 14.99,
+    "category": "Kid",
+    "brand": "SunnyDays",
+    "ratings": 4.5,
+    "createdAt": "2024-09-04T11:45:00Z"
+  },
+  {
+    "productName": "Men's Wool Scarf",
+    "productImage": "https://i.ibb.co/MkzhQyH/p-22.jpg",
+    "description": "Warm wool scarf with a classic plaid pattern.",
+    "price": 29.99,
+    "category": "Men",
+    "brand": "CozyStyle",
+    "ratings": 4.9,
+    "createdAt": "2024-09-05T14:30:00Z"
+  },
+  {
+    "productName": "Women's Silk Scarf",
+    "productImage": "https://i.ibb.co/fHKT1zG/p-23.jpg",
+    "description": "Luxurious silk scarf with a vibrant floral print.",
+    "price": 49.99,
+    "category": "Women",
+    "brand": "ElegantWear",
+    "ratings": 4.8,
+    "createdAt": "2024-09-06T09:20:00Z"
+  },
+  {
+    "productName": "Kid's Swimwear Set",
+    "productImage": "https://i.ibb.co/1bHLkvq/p-24.jpg",
+    "description": "Two-piece swimwear set with UV protection for beach fun.",
+    "price": 24.99,
+    "category": "Kid",
+    "brand": "SplashZone",
+    "ratings": 4.7,
+    "createdAt": "2024-09-07T13:10:00Z"
+  },
+  {
+    "productName": "Men's Athletic Shorts",
+    "productImage": "https://i.ibb.co/30wdC33/p-15.jpg",
+    "description": "Breathable athletic shorts with moisture-wicking fabric.",
+    "price": 29.99,
+    "category": "Men",
+    "brand": "ActiveWear",
+    "ratings": 4.6,
+    "createdAt": "2024-09-08T15:45:00Z"
+  },
+  {
+    "productName": "Women's Yoga Pants",
+    "productImage": "https://i.ibb.co/rMznSsx/p-2.jpg",
+    "description": "Stretchy yoga pants with a high waistband for a secure fit.",
+    "price": 34.99,
+    "category": "Women",
+    "brand": "FitStyle",
+    "ratings": 4.9,
+    "createdAt": "2024-09-09T11:50:00Z"
+  },
+  {
+    "productName": "Kid's Winter Boots",
+    "productImage": "https://i.ibb.co/TtzM88S/p-16.jpg",
+    "description": "Insulated winter boots with a non-slip sole and waterproof design.",
+    "price": 44.99,
+    "category": "Kid",
+    "brand": "SnowSteps",
+    "ratings": 4.8,
+    "createdAt": "2024-09-10T14:25:00Z"
+  }
+]
