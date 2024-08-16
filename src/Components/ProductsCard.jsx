@@ -9,45 +9,48 @@ const ProductsCard = ({ product }) => {
     productImage,
     productName,
   } = product;
+
   const date = new Date(createdAt);
   const formattedDate = date.toLocaleDateString();
 
   return (
-    <div>
-      <div className="card bg-base-100 w-96 shadow-xl">
-        <figure className="h-[350px] w-full">
-          <img
-            className="h-full w-full bg-cover bg-center   object-cover object-top"
-            src={productImage}
-            alt="Men's Casual T-Shirt"
-          />
-        </figure>
-        <div className="p-5">
-          <h2 className="card-title">{productName}</h2>
-          <div className="flex pt-3 justify-between items-center">
-            <p className="pb-3 font-medium">{category}</p>
-            <p className="pb-3  font-medium">{brand}</p>
+    <div className="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+      <figure className="relative w-full h-96 overflow-hidden">
+        <img
+          className="w-full h-auto object-contain"
+          src={productImage}
+          alt={productName}
+        />
+      </figure>
+
+      <div className="p-5">
+        <h2 className="text-2xl font-bold mb-2">{productName}</h2>
+        <div className="flex justify-between items-center mb-4">
+          <p className="text-lg font-medium text-gray-600">{category}</p>
+          <p className="text-lg font-medium text-gray-600">{brand}</p>
+        </div>
+        <div className="flex justify-between items-center mb-4">
+          <div>
+            <span className="text-lg font-semibold text-gray-800">Price:</span>
+            <span className="text-lg font-medium text-gray-800 ml-1">
+              ${price}
+            </span>
           </div>
-          <div className="pb-4 flex pt-3 justify-between items-center">
-            <div>
-              <span className="font-semibold">Price: </span>{" "}
-              <span>{price}</span>
-            </div>
-            <div>
-              <span className="font-semibold">Time: </span>
-              <span>{formattedDate}</span>
-            </div>
+          <div>
+            <span className="text-lg font-semibold text-gray-800">Date:</span>
+            <span className="text-lg font-medium text-gray-800 ml-1">
+              {formattedDate}
+            </span>
           </div>
-          <p>{description}</p>
-          <p className="py-2">
-            <span className="font-semibold">Rating: </span>{" "}
-            <span>{ratings}⭐</span>
-          </p>
-          <div className="card-actions justify-end mt-4">
-            <button className="rounded-xl py-3 font-pt text-lg font-medium w-full bg-yellow-300">
-              Buy Now
-            </button>
-          </div>
+        </div>
+        <p className="text-gray-700 mb-4">{description}</p>
+        <p className="text-lg font-semibold text-gray-800 mb-4">
+          Rating: <span className="text-yellow-500">{ratings}⭐</span>
+        </p>
+        <div className="flex justify-end">
+          <button className="bg-yellow-400 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-yellow-500 transition duration-300">
+            Buy Now
+          </button>
         </div>
       </div>
     </div>

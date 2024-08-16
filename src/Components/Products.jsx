@@ -17,24 +17,16 @@ const Products = () => {
   const [max, setMax] = useState(0);
   useEffect(() => {
     fetch(
-      `http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&brand=${brandName}&category=${categoryName}&price=${price}&date=${date}&search=${searchValue}`
+      `http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&brand=${brandName}&category=${categoryName}&price=${price}&date=${date}&search=${searchValue}&min=${min}&max=${max}`
     ).then((res) =>
       res.json().then((data) => {
         setProducts(data);
       })
     );
-  }, [
-    currentPage,
-    itemsPerPage,
-    brandName,
-    categoryName,
-    price,
-    date,
-    searchValue,
-  ]);
+  }, [currentPage, itemsPerPage, brandName, categoryName, price, date, searchValue, min, max]);
   useEffect(() => {
     fetch(
-      `http://localhost:5000/products-count?brand=${brandName}&category=${categoryName}&price=${price}&search=${searchValue}`
+      `http://localhost:5000/products-count?brand=${brandName}&category=${categoryName}&price=${price}&search=${searchValue}&min=${min}&max=${max}`
     ).then((res) =>
       res.json().then((data) => {
         setCount(data.count);
@@ -123,7 +115,10 @@ const Products = () => {
           </select>
           <select
             value={date}
-            onChange={(e) => setDate(e.target.value)}
+            onChange={(e) => {
+              setDate(e.target.value);
+              setCurrentPage(1);
+            }}
             className="w-48 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
           >
             <option value="" selected>
@@ -133,7 +128,10 @@ const Products = () => {
             <option value="old">Oldest First</option>
           </select>
           <input
-            onChange={(e) => setMin(e.target.value)}
+            onChange={(e) => {
+              setMin(e.target.value);
+              setCurrentPage(1);
+            }}
             className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 placeholder-black"
             type="text"
             placeholder="min price"
