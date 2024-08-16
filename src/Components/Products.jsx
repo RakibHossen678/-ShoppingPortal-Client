@@ -6,39 +6,57 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Products = () => {
   const [Products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  // eslint-disable-next-line no-unused-vars
   const [itemsPerPage, setItemsPerPage] = useState(9);
   const [count, setCount] = useState(0);
+  const [brandName, setBrandName] = useState("");
+  const [categoryName, setCategoryName] = useState("");
+  const [price, setPrice] = useState(0);
+  const [date, setDate] = useState("");
+  const [searchValue, setSearchValue] = useState("");
+  const [min, setMin] = useState(0);
+  const [max, setMax] = useState(0);
   useEffect(() => {
     fetch(
-      `http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}`
+      `http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&brand=${brandName}&category=${categoryName}&price=${price}`
     ).then((res) =>
       res.json().then((data) => {
         setProducts(data);
       })
     );
-  }, [currentPage, itemsPerPage]);
+  }, [currentPage, itemsPerPage, brandName, categoryName, price]);
   useEffect(() => {
-    fetch("http://localhost:5000/products-count").then((res) =>
+    fetch(
+      `http://localhost:5000/products-count?brand=${brandName}&category=${categoryName}&price=${price}`
+    ).then((res) =>
       res.json().then((data) => {
         setCount(data.count);
       })
     );
-  }, []);
+  }, [brandName, categoryName, price]);
   const numOfPage = Math.ceil(count / itemsPerPage);
   const pages = [...Array(numOfPage).keys()].map((element) => element + 1);
   const handlePagination = (page) => {
     setCurrentPage(page);
   };
+  const handleSearch = (e) => {
+    e.preventDefault();
+    const data = e.target.search.value;
+    setSearchValue(data);
+  };
+  console.log(categoryName);
   return (
     <div className="w-10/12 mx-auto mt-40 mb-20">
       <h1 className="text-center font-pt text-5xl font-bold">
         Explore Our Products
       </h1>
       <div className="my-10">
-        <form className="flex items-center gap-2 justify-center ">
+        <form
+          onSubmit={handleSearch}
+          className="flex items-center gap-2 justify-center "
+        >
           <input
             type="search"
+            name="search"
             placeholder="Enter your product name"
             className="w-60  p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
           />
@@ -50,38 +68,73 @@ const Products = () => {
           </button>
         </form>
         <div className="flex flex-wrap items-center gap-2 mt-10">
-          <select className="w-48 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
-            <option value="" disabled selected>
+          <select
+            onChange={(e) => {
+              setBrandName(e.target.value);
+              setCurrentPage(1);
+            }}
+            value={brandName}
+            className="w-48 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          >
+            <option value="" selected>
               Sort by Brand
             </option>
-            <option value="urban">UrbanWear</option>
-            <option value="style">StyleCo</option>
-            <option value="cloth">ComfyCloth</option>
-            <option value="fast">RunFast</option>
+            <option value="UrbanWear">UrbanWear</option>
+            <option value="StyleCo">StyleCo</option>
+            <option value="ComfyCloth">ComfyCloth</option>
+            <option value="RunFast">RunFast</option>
           </select>
-          <select className="w-48 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
-            <option value="" disabled selected>
+          <select
+            value={categoryName}
+            onChange={(e) => {
+              setCategoryName(e.target.value);
+              setCurrentPage(1);
+            }}
+            className="w-48 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          >
+            <option value="" selected>
               Sort by Category
             </option>
-            <option value="men">Men</option>
-            <option value="women">Women</option>
-            <option value="kid">Kids</option>
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+            <option value="Kids">Kids</option>
           </select>
-          <select className="w-48 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
-            <option value="" disabled selected>
+          <select
+            value={price}
+            onChange={(e) => {
+              setPrice(e.target.value);
+              setCurrentPage(1);
+            }}
+            className="w-48 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          >
+            <option value="" selected>
               Sort by Price
             </option>
             <option value="lowToHigh">Low to High</option>
             <option value="highToLow">High to Low</option>
           </select>
-          <select className="w-48 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
-            <option value="" disabled selected>
+          <select
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            className="w-48 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          >
+            <option value="" selected>
               Sort by Date
             </option>
             <option value="new">Newest First</option>
           </select>
-          <input className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" type="text" placeholder="min price"/>
-          <input className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" type="text" placeholder="Max price"/>
+          <input
+            onChange={(e) => setMin(e.target.value)}
+            className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 placeholder-black"
+            type="text"
+            placeholder="min price"
+          />
+          <input
+            onChange={(e) => setMax(e.target.value)}
+            className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 placeholder-black"
+            type="text"
+            placeholder="Max price"
+          />
         </div>
       </div>
       <div className="my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8">
