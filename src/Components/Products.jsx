@@ -17,13 +17,13 @@ const Products = () => {
   const [max, setMax] = useState(0);
   useEffect(() => {
     fetch(
-      `http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&brand=${brandName}&category=${categoryName}&price=${price}`
+      `http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&brand=${brandName}&category=${categoryName}&price=${price}&date=${date}`
     ).then((res) =>
       res.json().then((data) => {
         setProducts(data);
       })
     );
-  }, [currentPage, itemsPerPage, brandName, categoryName, price]);
+  }, [currentPage, itemsPerPage, brandName, categoryName, price, date]);
   useEffect(() => {
     fetch(
       `http://localhost:5000/products-count?brand=${brandName}&category=${categoryName}&price=${price}`
@@ -122,6 +122,7 @@ const Products = () => {
               Sort by Date
             </option>
             <option value="new">Newest First</option>
+            <option value="old">Oldest First</option>
           </select>
           <input
             onChange={(e) => setMin(e.target.value)}
