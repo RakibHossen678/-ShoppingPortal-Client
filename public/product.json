@@ -15,7 +15,7 @@
     "description": "Lightweight floral dress with a comfortable fit for summer.",
     "price": 34.99,
     "category": "Women",
-    "brand": "FashionHub",
+    "brand": "UrbanWear",
     "ratings": 4.7,
     "createdAt": "2024-08-02T11:00:00Z"
   },
@@ -45,7 +45,7 @@
     "description": "Slim-fit chino pants with a wrinkle-resistant finish.",
     "price": 44.99,
     "category": "Men",
-    "brand": "ModernFit",
+    "brand": "StyleCo",
     "ratings": 4.3,
     "createdAt": "2024-08-06T15:00:00Z"
   },
@@ -75,7 +75,7 @@
     "description": "Cozy knit sweater with a relaxed fit and ribbed cuffs.",
     "price": 49.99,
     "category": "Women",
-    "brand": "WarmWool",
+    "brand": "UrbanWear",
     "ratings": 4.5,
     "createdAt": "2024-08-09T09:00:00Z"
   },
@@ -85,7 +85,7 @@
     "description": "Genuine leather belt with a classic buckle design.",
     "price": 24.99,
     "category": "Men",
-    "brand": "ClassicLeather",
+    "brand": "UrbanWear",
     "ratings": 4.8,
     "createdAt": "2024-08-10T11:30:00Z"
   },
@@ -95,7 +95,7 @@
     "description": "Stylish ankle boots with a side zipper and cushioned insole.",
     "price": 79.99,
     "category": "Women",
-    "brand": "StepInStyle",
+    "brand": "StyleCo",
     "ratings": 4.6,
     "createdAt": "2024-08-11T14:15:00Z"
   },
@@ -105,7 +105,7 @@
     "description": "Breathable polo shirt with a collar and button placket.",
     "price": 29.99,
     "category": "Men",
-    "brand": "CasualFit",
+    "brand": "UrbanWear",
     "ratings": 4.4,
     "createdAt": "2024-08-12T16:45:00Z"
   },
@@ -115,7 +115,7 @@
     "description": "Flowy maxi skirt with an elastic waistband and floral print.",
     "price": 39.99,
     "category": "Women",
-    "brand": "BohoStyle",
+    "brand": "StyleCo",
     "ratings": 4.7,
     "createdAt": "2024-08-13T13:00:00Z"
   },
@@ -125,7 +125,7 @@
     "description": "Comfortable sneakers with a durable rubber sole.",
     "price": 54.99,
     "category": "Men",
-    "brand": "WalkEasy",
+    "brand": "RunFast",
     "ratings": 4.5,
     "createdAt": "2024-08-14T17:30:00Z"
   },
@@ -135,7 +135,7 @@
     "description": "Soft wool scarf with fringe edges, perfect for cold weather.",
     "price": 29.99,
     "category": "Women",
-    "brand": "CozyWool",
+    "brand": "StyleCo",
     "ratings": 4.9,
     "createdAt": "2024-08-15T09:20:00Z"
   },
@@ -145,7 +145,7 @@
     "description": "Two-piece formal suit with a slim fit and classic design.",
     "price": 199.99,
     "category": "Men",
-    "brand": "Elegance",
+    "brand": "UrbanWear",
     "ratings": 4.8,
     "createdAt": "2024-08-16T10:40:00Z"
   },
@@ -155,7 +155,7 @@
     "description": "Elegant high heels with a pointed toe and stiletto heel.",
     "price": 89.99,
     "category": "Women",
-    "brand": "GlamStep",
+    "brand": "RunFast",
     "ratings": 4.7,
     "createdAt": "2024-08-17T12:30:00Z"
   },
@@ -165,7 +165,7 @@
     "description": "Warm wool sweater with a crew neck and ribbed hem.",
     "price": 69.99,
     "category": "Men",
-    "brand": "WinterWarm",
+    "brand": "UrbanWear",
     "ratings": 4.6,
     "createdAt": "2024-08-18T14:50:00Z"
   },
@@ -175,7 +175,7 @@
     "description": "Skinny fit denim jeans with a comfortable stretch fabric.",
     "price": 49.99,
     "category": "Women",
-    "brand": "DenimCo",
+    "brand": "StyleCo",
     "ratings": 4.8,
     "createdAt": "2024-08-19T09:10:00Z"
   },
@@ -185,7 +185,7 @@
     "description": "Genuine leather jacket with a zip closure and multiple pockets.",
     "price": 159.99,
     "category": "Men",
-    "brand": "LeatherWorks",
+    "brand": "StyleCo",
     "ratings": 4.9,
     "createdAt": "2024-08-20T15:30:00Z"
   },
@@ -195,7 +195,7 @@
     "description": "Classic trench coat with a belted waist and double-breasted design.",
     "price": 119.99,
     "category": "Women",
-    "brand": "StyleChic",
+    "brand": "UrbanWear",
     "ratings": 4.8,
     "createdAt": "2024-08-21T11:45:00Z"
   },
@@ -205,7 +205,7 @@
     "description": "Elegant leather formal shoes with a polished finish.",
     "price": 89.99,
     "category": "Men",
-    "brand": "FootClassic",
+    "brand": "RunFast",
     "ratings": 4.7,
     "createdAt": "2024-08-22T10:20:00Z"
   },
@@ -215,7 +215,7 @@
     "description": "Stylish leather handbag with multiple compartments and a zip closure.",
     "price": 79.99,
     "category": "Women",
-    "brand": "FashionCarry",
+    "brand": "UrbanWear",
     "ratings": 4.9,
     "createdAt": "2024-08-23T13:10:00Z"
   },
@@ -225,7 +225,7 @@
     "description": "Comfortable cotton shorts with an elastic waistband.",
     "price": 29.99,
     "category": "Men",
-    "brand": "EasyWear",
+    "brand": "StyleCo",
     "ratings": 4.4,
     "createdAt": "2024-08-24T09:30:00Z"
   },
@@ -235,7 +235,7 @@
     "description": "Soft and breathable cotton t-shirt available in fun prints.",
     "price": 14.99,
     "category": "Kid",
-    "brand": "PlayWear",
+    "brand": "ComfyCloth",
     "ratings": 4.7,
     "createdAt": "2024-08-25T11:50:00Z"
   },
@@ -245,7 +245,7 @@
     "description": "Durable denim shorts with an adjustable waistband.",
     "price": 19.99,
     "category": "Kid",
-    "brand": "KidStyle",
+    "brand": "ComfyCloth",
     "ratings": 4.5,
     "createdAt": "2024-08-26T13:20:00Z"
   },
@@ -255,7 +255,7 @@
     "description": "Lightweight sneakers with velcro straps for easy wear.",
     "price": 29.99,
     "category": "Kid",
-    "brand": "TinySteps",
+    "brand": "ComfyCloth",
     "ratings": 4.8,
     "createdAt": "2024-08-27T15:00:00Z"
   },
@@ -265,7 +265,7 @@
     "description": "Cozy hoodie with a fun graphic print and front pocket.",
     "price": 24.99,
     "category": "Kid",
-    "brand": "LittleComfy",
+    "brand": "ComfyCloth",
     "ratings": 4.6,
     "createdAt": "2024-08-28T10:45:00Z"
   },
@@ -275,7 +275,7 @@
     "description": "Warm winter coat with a hood and insulated lining.",
     "price": 49.99,
     "category": "Kid",
-    "brand": "WinterGuard",
+    "brand": "ComfyCloth",
     "ratings": 4.9,
     "createdAt": "2024-08-29T12:30:00Z"
   },
@@ -285,7 +285,7 @@
     "description": "Comfortable cotton pajama set with cute animal prints.",
     "price": 19.99,
     "category": "Kid",
-    "brand": "DreamyNights",
+    "brand": "ComfyCloth",
     "ratings": 4.8,
     "createdAt": "2024-08-30T14:15:00Z"
   },
@@ -295,7 +295,7 @@
     "description": "Waterproof rain boots with a non-slip sole and playful designs.",
     "price": 24.99,
     "category": "Kid",
-    "brand": "SplashWalk",
+    "brand": "ComfyCloth",
     "ratings": 4.7,
     "createdAt": "2024-08-31T16:00:00Z"
   },
@@ -305,7 +305,7 @@
     "description": "Spacious backpack with adjustable straps and fun characters.",
     "price": 29.99,
     "category": "Kid",
-    "brand": "AdventureGear",
+    "brand": "ComfyCloth",
     "ratings": 4.9,
     "createdAt": "2024-09-01T09:30:00Z"
   },
@@ -315,7 +315,7 @@
     "description": "Water-resistant sports watch with multiple functions.",
     "price": 99.99,
     "category": "Men",
-    "brand": "TimeMaster",
+    "brand": "RunFast",
     "ratings": 4.8,
     "createdAt": "2024-09-02T08:15:00Z"
   },
@@ -325,7 +325,7 @@
     "description": "Soft leather gloves with a fleece lining for extra warmth.",
     "price": 39.99,
     "category": "Women",
-    "brand": "WinterWear",
+    "brand": "StyleCo",
     "ratings": 4.7,
     "createdAt": "2024-09-03T10:25:00Z"
   },
@@ -335,7 +335,7 @@
     "description": "Wide-brimmed sun hat with UV protection for outdoor play.",
     "price": 14.99,
     "category": "Kid",
-    "brand": "SunnyDays",
+    "brand": "ComfyCloth",
     "ratings": 4.5,
     "createdAt": "2024-09-04T11:45:00Z"
   },
@@ -345,7 +345,7 @@
     "description": "Warm wool scarf with a classic plaid pattern.",
     "price": 29.99,
     "category": "Men",
-    "brand": "CozyStyle",
+    "brand": "UrbanWear",
     "ratings": 4.9,
     "createdAt": "2024-09-05T14:30:00Z"
   },
@@ -355,7 +355,7 @@
     "description": "Luxurious silk scarf with a vibrant floral print.",
     "price": 49.99,
     "category": "Women",
-    "brand": "ElegantWear",
+    "brand": "UrbanWear",
     "ratings": 4.8,
     "createdAt": "2024-09-06T09:20:00Z"
   },
@@ -365,7 +365,7 @@
     "description": "Two-piece swimwear set with UV protection for beach fun.",
     "price": 24.99,
     "category": "Kid",
-    "brand": "SplashZone",
+    "brand": "UrbanWear",
     "ratings": 4.7,
     "createdAt": "2024-09-07T13:10:00Z"
   },
@@ -375,7 +375,7 @@
     "description": "Breathable athletic shorts with moisture-wicking fabric.",
     "price": 29.99,
     "category": "Men",
-    "brand": "ActiveWear",
+    "brand": "RunFast",
     "ratings": 4.6,
     "createdAt": "2024-09-08T15:45:00Z"
   },
@@ -385,7 +385,7 @@
     "description": "Stretchy yoga pants with a high waistband for a secure fit.",
     "price": 34.99,
     "category": "Women",
-    "brand": "FitStyle",
+    "brand": "RunFast",
     "ratings": 4.9,
     "createdAt": "2024-09-09T11:50:00Z"
   },
@@ -395,7 +395,7 @@
     "description": "Insulated winter boots with a non-slip sole and waterproof design.",
     "price": 44.99,
     "category": "Kid",
-    "brand": "SnowSteps",
+    "brand": "RunFast",
     "ratings": 4.8,
     "createdAt": "2024-09-10T14:25:00Z"
   }
