@@ -17,22 +17,30 @@ const Products = () => {
   const [max, setMax] = useState(0);
   useEffect(() => {
     fetch(
-      `http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&brand=${brandName}&category=${categoryName}&price=${price}&date=${date}`
+      `http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&brand=${brandName}&category=${categoryName}&price=${price}&date=${date}&search=${searchValue}`
     ).then((res) =>
       res.json().then((data) => {
         setProducts(data);
       })
     );
-  }, [currentPage, itemsPerPage, brandName, categoryName, price, date]);
+  }, [
+    currentPage,
+    itemsPerPage,
+    brandName,
+    categoryName,
+    price,
+    date,
+    searchValue,
+  ]);
   useEffect(() => {
     fetch(
-      `http://localhost:5000/products-count?brand=${brandName}&category=${categoryName}&price=${price}`
+      `http://localhost:5000/products-count?brand=${brandName}&category=${categoryName}&price=${price}&search=${searchValue}`
     ).then((res) =>
       res.json().then((data) => {
         setCount(data.count);
       })
     );
-  }, [brandName, categoryName, price]);
+  }, [brandName, categoryName, price, searchValue]);
   const numOfPage = Math.ceil(count / itemsPerPage);
   const pages = [...Array(numOfPage).keys()].map((element) => element + 1);
   const handlePagination = (page) => {
@@ -42,8 +50,8 @@ const Products = () => {
     e.preventDefault();
     const data = e.target.search.value;
     setSearchValue(data);
+    setCurrentPage(1);
   };
-  console.log(categoryName);
   return (
     <div className="w-10/12 mx-auto mt-40 mb-20">
       <h1 className="text-center font-pt text-5xl font-bold">
