@@ -4,7 +4,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 import toast from "react-hot-toast";
 
 const Login = () => {
-  const { signInUser } = useContext(AuthContext);
+  const { signInUser, googleSingIn } = useContext(AuthContext);
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -14,6 +14,15 @@ const Login = () => {
       .then((result) => {
         toast.success("User Logged in successfully");
         form.reset();
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
+  const googleSign = () => {
+    googleSingIn()
+      .then((result) => {
+        toast.success("Sign In successfully");
       })
       .catch((error) => {
         console.log(error.message);
@@ -70,6 +79,7 @@ const Login = () => {
 
         <div className="flex items-center mt-6 -mx-2">
           <button
+            onClick={googleSign}
             type="button"
             className="flex items-center justify-center w-full px-6 py-2 mx-2 text-sm font-medium text-white transition-colors duration-300 transform bg-yellow-500 rounded-lg focus:bg-blue-400 focus:outline-none"
           >
