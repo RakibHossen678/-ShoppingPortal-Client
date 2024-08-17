@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 const ProductsCard = ({ product }) => {
   const {
     createdAt,
@@ -56,5 +57,7 @@ const ProductsCard = ({ product }) => {
     </div>
   );
 };
-
+ProductsCard.propTypes={
+  product:PropTypes.object
+}
 export default ProductsCard;
