@@ -17,7 +17,7 @@ const Products = () => {
   const [max, setMax] = useState(0);
   useEffect(() => {
     fetch(
-      `http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&brand=${brandName}&category=${categoryName}&price=${price}&date=${date}&search=${searchValue}&min=${min}&max=${max}`
+      `https://shopping-portal-server.vercel.app/products?page=${currentPage}&size=${itemsPerPage}&brand=${brandName}&category=${categoryName}&price=${price}&date=${date}&search=${searchValue}&min=${min}&max=${max}`
     ).then((res) =>
       res.json().then((data) => {
         setProducts(data);
@@ -36,7 +36,7 @@ const Products = () => {
   ]);
   useEffect(() => {
     fetch(
-      `http://localhost:5000/products-count?brand=${brandName}&category=${categoryName}&price=${price}&search=${searchValue}&min=${min}&max=${max}`
+      `https://shopping-portal-server.vercel.app/products-count?brand=${brandName}&category=${categoryName}&price=${price}&search=${searchValue}&min=${min}&max=${max}`
     ).then((res) =>
       res.json().then((data) => {
         setCount(data.count);
@@ -77,7 +77,7 @@ const Products = () => {
             Search
           </button>
         </form>
-        <div className="flex flex-wrap gap-4 mt-10">
+        <div className="flex flex-wrap gap-2 mt-10">
           <select
             onChange={(e) => {
               setBrandName(e.target.value);
@@ -103,7 +103,7 @@ const Products = () => {
             <option value="">Sort by Category</option>
             <option value="Men">Men</option>
             <option value="Women">Women</option>
-            <option value="Kids">Kids</option>
+            <option value="Kid">Kids</option>
           </select>
           <select
             value={price}

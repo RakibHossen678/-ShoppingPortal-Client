@@ -5,7 +5,7 @@ const Navbar = () => {
   const navlinks = (
     <>
       <li className="text-[17px] hover:border-b-2 border-b-yellow-300 hover:text-yellow-300">
-        <a href="#">Home</a>
+        <Link to={"/"}>Home</Link>
       </li>
       <li className="text-[17px] hover:border-b-2 border-b-yellow-300 hover:text-yellow-300">
         <a href="#">About us</a>
