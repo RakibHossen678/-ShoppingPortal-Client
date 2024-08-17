@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="flex flex-wrap gap-8 justify-between w-full">
             <div className="flex-1 min-w-[250px] mb-6">
               <h1 className="text-3xl font-bold mb-4">
-              Shopping<span className="text-yellow-400">Portal</span>
+                Shopping<span className="text-yellow-400">Portal</span>
               </h1>
               <h4 className="text-xl font-semibold mb-3">About Us</h4>
               <p className="text-base leading-relaxed">

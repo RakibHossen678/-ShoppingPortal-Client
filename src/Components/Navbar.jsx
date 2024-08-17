@@ -1,5 +1,6 @@
 import { FiShoppingCart } from "react-icons/fi";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const navlinks = (
     <>
@@ -44,9 +45,12 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="flex space-x-3 items-center">
-            <button className="bg-yellow-300 rounded-md lg:px-7 px-4 lg:py-3 py-2 hover:bg-yellow-200">
+            <Link
+              to={"./login"}
+              className="bg-yellow-300 rounded-md lg:px-7 px-4 lg:py-3 py-2 hover:bg-yellow-200"
+            >
               Login
-            </button>
+            </Link>
             <FiShoppingCart className="hover:text-yellow-600 " size={24} />
           </div>
         </div>
