@@ -1,6 +1,24 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 const Login = () => {
+  const { signInUser } = useContext(AuthContext);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const pass = form.pass.value;
+    signInUser(email, pass)
+      .then((result) => {
+        toast.success("User Logged in successfully");
+        form.reset();
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   return (
     <div className="my-20">
       <div className="w-full max-w-lg p-6 m-auto mx-auto bg-white rounded-lg shadow-md ">
@@ -10,11 +28,12 @@ const Login = () => {
           </h1>
         </div>
 
-        <form className="mt-6">
+        <form onSubmit={handleSubmit} className="mt-6">
           <div>
             <label className="block ">Email</label>
             <input
               type="email"
+              name="email"
               placeholder="Enter your email"
               className="block w-full px-4 py-2 mt-2 border-black border-2 rounded-lg focus:border-yellow-400 dark:focus:border-yellow-400 focus:ring-yellow-400 focus:outline-none focus:ring focus:ring-opacity-40"
             />
@@ -23,13 +42,17 @@ const Login = () => {
             <label className="block ">Password</label>
             <input
               type="password"
+              name="pass"
               placeholder="Enter your password"
               className="block w-full px-4 py-2 mt-2 border-black border-2 rounded-lg focus:border-yellow-400 dark:focus:border-yellow-400 focus:ring-yellow-400 focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
 
           <div className="mt-6">
-            <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-400 rounded-lg focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
+            <button
+              type="submit"
+              className="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-400 rounded-lg focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50"
+            >
               Sign In
             </button>
           </div>

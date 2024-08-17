@@ -1,6 +1,26 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 const Register = () => {
+  const { createUser } = useContext(AuthContext);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const pass = form.pass.value;
+    createUser(email, pass)
+      .then((result) => {
+        console.log(result.user);
+        toast.success("User Created Successfully");
+        form.reset();
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   return (
     <div className="my-20">
       <div className="w-full max-w-lg p-6 m-auto mx-auto bg-white rounded-lg shadow-md ">
@@ -10,11 +30,12 @@ const Register = () => {
           </h1>
         </div>
 
-        <form className="mt-6">
+        <form onSubmit={handleSubmit} className="mt-6">
           <div>
             <label className="block ">Name</label>
             <input
               type="text"
+              name="name"
               placeholder="Enter your name"
               className="block w-full px-4 py-2 mt-2 border-black border-2 rounded-lg focus:border-yellow-400 dark:focus:border-yellow-400 focus:ring-yellow-400 focus:outline-none focus:ring focus:ring-opacity-40"
             />
@@ -23,6 +44,7 @@ const Register = () => {
             <label className="block ">Email</label>
             <input
               type="email"
+              name="email"
               placeholder="Enter your email"
               className="block w-full px-4 py-2 mt-2 border-black border-2 rounded-lg focus:border-yellow-400 dark:focus:border-yellow-400 focus:ring-yellow-400 focus:outline-none focus:ring focus:ring-opacity-40"
             />
@@ -31,6 +53,7 @@ const Register = () => {
             <label className="block ">Password</label>
             <input
               type="password"
+              name="pass"
               placeholder="Enter your password"
               className="block w-full px-4 py-2 mt-2 border-black border-2 rounded-lg focus:border-yellow-400 dark:focus:border-yellow-400 focus:ring-yellow-400 focus:outline-none focus:ring focus:ring-opacity-40"
             />
